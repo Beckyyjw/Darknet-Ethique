@@ -3,44 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À propos - NetEthik</title>
-    <link rel="stylesheet" href="../css/style.css"> <!-- Ton fichier CSS ici -->
+    <title>Explorer - NetEthik</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+
 </head>
+<!-- Script JS à charger en dernier -->
+<script src="../java/script.js"></script>
 <body>
-    <!-- En-tête -->
-    <header>
-        <div class="logo-container">
-            <img src="../assets/l.png" alt="logo" height="50" width="50"> 
-            <span class="brand">NetEthik</span>
+    <nav class="navbar">
+        <img src="../assets/Site_logo.png" alt="logo" class="logo-img"> <!--="50" width="50"-->
+        <a href="#" class="logo">NetEthik</a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="../html/accueil.html">Accueil</a></li>
+                <li><a href="../html/apropos.html">À propos</a></li>
+            </ul>
         </div>
-        <nav>
-            <a href="#">Explorer le Dark Web</a>
-            <a href="../html/accueil.html">Accueil</a>
-            <a href="#">Pratiques sécuritaires</a>
-            <a href="#">Régulations et solutions</a>
-            <a href="#">À propos</a> <!-- Lien direct vers cette page -->
-        </nav>
+        <img src="../assets/menu_hamburger.png" alt="menu hamburger" class="menu-hamburger">
+        
+    </nav>
+    </div>
+    <header>
+        <section class="banner">
+            <h1>DARKNET ÉTHIQUE</h1>
+            <div class="overlay">
+                <h2>Éducation sur le Dark Web et ses risques pour une justice numérique et sécurisée</h2>
+            </div>
+        </section>
+        <div class="menu-interactif">
+        <ol>
+            
+            <li class = "postit-item" id="postit-item2"><a href="derives.html">Les dérives du Dark Web</a></li>
+            <li class = "postit-item" id="postit-item3"><a href="#">Impact sur la justice et la gouvernance</a></li>
+            <li class = "postit-item" id="postit-item4"><a href="#">Pratiques sécuritaires pour naviguer en toute sécurité</a></li>
+        </ol>
+    </div>
     </header>
+
 
     <!-- Contenu principal -->
     <main>
-        <fieldset>
-            <legend>Explorer le dark web</legend>
-            <p>
-                ....
-            </p>
-        </fieldset>
+        <div class="carte-darkweb">
 
-        <fieldset>
-            <legend>Membres du projet</legend>
-            <p><strong>Étudiante 1 :</strong> ELIBE Becky Joyce</p>
-            <p><strong>Étudiant 2 :</strong> Antoine EMAD ASHAM</p>
-        </fieldset>
+            <div class="carte">
+                <img src="../assets/traffic_arme.jpeg" alt="Vente d’armes">
+                <h3>Vente d’armes</h3>
+                <p>Simulez l’accès à un marché noir d’armes. Une réalité cachée derrière les réseaux anonymes.</p>
+                <a href="#" class="btn-explorer">Explorer</a>
+            </div>
+
+            <div class="carte">
+                <img src="../assets/vente_humain.jpeg" alt="Trafic humain">
+                <h3>Trafic d’êtres humains</h3>
+                <p>Une simulation choquante mais nécessaire pour comprendre les dangers du Dark Web.</p>
+                <a href="#" class="btn-explorer">Explorer</a>
+            </div>
+
+            <div class="carte">
+                <img src="../assets/blanchiment_argent.jpeg" alt="Blanchiment d’argent">
+                <h3>Blanchiment d’argent</h3>
+                <p>Apprenez comment les réseaux dissimulent les flux financiers illégaux dans notre démonstration.</p>
+                <a href="#" class="btn-explorer">Explorer</a>
+            </div>
+
+            <div class="carte">
+                <img src="../assets/faux_document.jpeg" alt="Faux documents">
+                <h3>Faux documents</h3>
+                <p>Cartes d’identité, passeports, diplômes — un monde de fausses identités exposé.</p>
+                <a href="#" class="btn-explorer">Explorer</a>
+            </div>
+
+        </div>
     </main>
 
     <!-- Pied de page -->
-    <footer>
-        <p><a href="#">En savoir plus ?</a></p>
+    <footer class="site-footer">
+        <div class="footer-container">
+        <div class="footer-col">
+        
+        <ul>
+            <li><a href="../html/explorer.html">Simulation</a></li>
+            <li><a href="../html/apropos.html">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </div>
+
+        <div class="footer-col">
+       
+        <ul>
+            <li><a href="https://darknet-tor.com/">En savoir plus</a></li>
+            <li><a href="#">Mentions légales</a></li>
+        </ul>
+        </div>
+        </div>
+        <p class="copyright">© 2025 NetEthik. Tous droits réservés.</p>
     </footer>
+
+    
 </body>
 </html>

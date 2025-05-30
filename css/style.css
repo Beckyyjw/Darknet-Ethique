@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background-color: #0d1117;
+    color: #E0F8F7;
+}
+
+h1{
+    color: #00ffbf;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #00ffbf5d, 0 0 20px #00ffbf;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-top: 500px;
+}
+.overlay h2{
+    font-size: 1.2rem;
+    color: #00d8ff;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.6;
+    text-shadow: 0 0 10px #00d9ff63, 0 0 20px #00d8ff;
+    margin-bottom: 50px;
+}
+
+#postit {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    margin: 25px;
+    padding: 25px;
+}
+.postit-item{
+    background-color: #0d1117;
+    position: relative;
+    text-transform: uppercase;
+}
+#postit-item1{
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #FF4C4C;
+}
+#postit-item1 a{
+    color: #FF4C4C;
+}   
+#postit-item2{
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #00BFFF;
+}
+#postit-item2 a{
+    color: #00BFFF;
+}   
+#postit-item3{
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #00FFBF;
+}
+#postit-item3 a{
+    color: #00FFBF;
+}  
+#postit-item4{
+    margin: 10px;
+    padding: 20px;
+    color: #001aff;
+    border: 1px solid #001aff;
+}
+#postit-item4 a{
+    color: #001aff;
+}  
+
+
+
+
+header{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../assets/background.png");
+    background-size: cover;
+    
+}
+.navbar{
+    position: fixed;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.9);
+    height: 40px;
+    top: 0;
+    z-index: 99999;
+ 
+    
+
+}
+.navbar a {
+    color: white;
+    
+}
+.navbar .logo{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.navbar .nav-links ul{
+    display: flex;
+}
+.navbar .nav-links ul li{
+    margin: 0 25px;  
+    text-transform: uppercase;
+}
+.navbar .menu-hamburger{
+    display: none;
+    position: absolute;
+    width: 35px;
+    top: 50px;
+    right: 50px;
+}
+.logo-img{
+    width: 35px;
+    top: 50px;
+    left: 50px;
+}    
+@media screen and (max-width: 500px) {
+    .navbar{
+        padding: 0;
+    }
+    .navbar .menu-hamburger{
+        display: block;
+    }
+    .nav-links{
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #00ffbf1d;
+        backdrop-filter: blur(7px);
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .navbar .nav-links ul li{
+        margin: 25 0px;  
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+    .navbar .logo{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+}
+
+
+.introac{
+    padding-top: 200px;
+}
+.intro{
+    padding: 25px;
+}
+main {
+    padding: 2em;
+}
+
+.carte-darkweb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.carte {
+    background-color: #161b22;
+    padding: 1.5em;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,255,191,0.15);
+    transition: 0.3s ease;
+}
+    
+.carte:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,255,191,0.4);
+}
+
+.carte img {
+    height: 70px;
+    margin-bottom: 1em;
+}
+
+.carte h3 {
+    color: #00FFBF;
+    margin-bottom: 0.5em;
+}
+
+.carte p {
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+.carte a {
+    display: inline-block;
+    margin-top: 1em;
+    background-color: #00FFBF;
+    color: #000;
+    padding: 0.5em 1em;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.carte a:hover {
+    background-color: #00c9a5;
+}
+
+.site-footer {
+  background-color: #0d1117;
+  padding: 100px 2rem 2rem 2rem;
+  color: #E0F8F7;
+  font-size: 0.9rem;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col a {
+  color: #00d8ff;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* SECTION INTRO */
+.introac {
+  padding: 4rem 2rem;
+  background-color: #0d1117;
+}
+
+.intro h2 {
+  text-align: center;
+  color: #00FFBF;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.intro-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.Intro_colonne_gauche {
+  flex: 1;
+  color: #E0F8F7;
+  font-size: 1rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.Intro_colonne_droite {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.Intro_colonne_droite img {
+  height: 60px;
+  filter: drop-shadow(0 0 5px #00FFBF);
+}
+
+/* SECTION REDIRECTIONS */
+.redirections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: #0f141a;
+}
+
+.sub_redirections {
+  background-color: #161b22;
+  border: 1px solid #00FFBF44;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sub_redirections:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 255, 191, 0.4);
+}
+
+.sub_redirections img {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.sub_redirections h3 {
+  color: #00FFBF;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.sub_redirections p {
+  font-size: 0.95rem;
+  color: #E0F8F7;
+}
+
