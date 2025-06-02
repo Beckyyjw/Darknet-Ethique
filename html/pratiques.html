@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darknet Éthique</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <script src="../js/chatbot.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../assets/Site_logo.png" alt="logo" class="logo-img"> <!--="50" width="50"-->
+        <a href="#" class="logo">NetEthik</a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="../html/accueil.html">Accueil</a></li>
+                <li><a href="../html/apropos.html">À propos</a></li>
+            </ul>
+        </div>
+        <img src="../assets/menu_hamburger.png" alt="menu hamburger" class="menu-hamburger">
+        
+    </nav>
+    <header>
+        <section class="banner">
+            <h1>DARKNET ÉTHIQUE</h1>
+            <div class="overlay">
+                <h2>Éducation sur le Dark Web et ses risques pour une justice numérique et sécurisée</h2>
+            </div>
+        </section>
+        <div class="menu-interactif">
+        <ol>
+            <li class = "postit-item" id="postit-item1"><a href="explorer.html">Explorer le Dark Web</a></li>
+            <li class = "postit-item" id="postit-item2"><a href="derives.html">Les dérives du Dark Web</a></li>
+            <li class = "postit-item" id="postit-item3"><a href="impact.html">Impact sur la justice et la gouvernance</a></li>
+        </ol>
+    </div>
+    </header>
+    <main>
+        <section id="chatbot-interface">
+            <h2>💬 Chatbot - GreenIT</h2>
+
+            <div id="chat-box">
+            <!-- Les messages apparaîtront ici -->
+            </div>
+
+            <div class="chat-input-container">
+                <input type="text" id="user-input" placeholder="Écrivez votre message ici...">
+                <button id="send-btn" onclick="fetchJSON('../json/intents.json')">Envoyer</button>
+            </div>
+        </section>
+
+        <section id="cybersecurity-tips">
+            <h1 class="tips-title">🔐 Bonnes pratiques en cybersécurité</h1>
+
+            <table id="cybersecurity-table">
+                <caption>10 règles essentielles à suivre</caption>
+                <thead>
+                    <tr>
+                        <th>🔰</th>
+                        <th>Bonne pratique</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td data-label="🔰">1</td>
+                    <td data-label="Bonne pratique">Utilisez des mots de passe forts</td>
+                    <td data-label="Description">Minimum 12 caractères, mélange de majuscules, minuscules, chiffres et symboles. N’utilisez jamais le même mot de passe.</td>
+                    </tr>
+                    <tr>
+                    <td>2</td>
+                    <td>Activez la 2FA</td>
+                    <td>Utilisez Google Authenticator, Authy, etc. Évitez les SMS si possible.</td>
+                    </tr>
+                    <tr>
+                    <td>3</td>
+                    <td>Restez vigilant au phishing</td>
+                    <td>Ne cliquez pas sur des liens suspects, vérifiez les expéditeurs, ne donnez jamais vos infos par email.</td>
+                    </tr>
+                    <tr>
+                    <td>4</td>
+                    <td>Utilisez des sites sécurisés</td>
+                    <td>Vérifiez la présence de <code>https://</code> et la légitimité du site.</td>
+                    </tr>
+                    <tr>
+                    <td>5</td>
+                    <td>Faites les mises à jour</td>
+                    <td>Mettez à jour le système, le navigateur et les applis pour éviter les failles connues.</td>
+                    </tr>
+                    <tr>
+                    <td>6</td>
+                    <td>Sécurisez vos appareils</td>
+                    <td>Utilisez un mot de passe, un verrou biométrique, installez un antivirus, évitez les apps non officielles.</td>
+                    </tr>
+                    <tr>
+                    <td>7</td>
+                    <td>Méfiez-vous du Wi-Fi public</td>
+                    <td>Évitez les connexions sensibles et utilisez un VPN si nécessaire.</td>
+                    </tr>
+                    <tr>
+                    <td>8</td>
+                    <td>Contrôlez votre vie privée</td>
+                    <td>Vérifiez les autorisations, nettoyez vos cookies, utilisez des extensions de protection.</td>
+                    </tr>
+                    <tr>
+                    <td>9</td>
+                    <td>Faites attention aux téléchargements</td>
+                    <td>Ne téléchargez que depuis des sources fiables. Évitez les logiciels piratés.</td>
+                    </tr>
+                    <tr>
+                    <td>10</td>
+                    <td>Formez-vous régulièrement</td>
+                    <td>Suivez des tutos, restez informé des menaces actuelles (phishing, ransomwares...)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <ul>
+                    <li><a href="../html/explorer.html">Simulation</a></li>
+                    <li><a href="../html/apropos.html">À propos</a></li>
+                    <li><a href="apropos.html">Contact</a></li>
+                </ul>
+        </div>
+
+        <div class="footer-col">
+       
+        <ul>
+            <li><a href="https://darknet-tor.com/">En savoir plus</a></li>
+            <li><a href="#">Mentions légales</a></li>
+        </ul>
+        </div>
+        </div>
+        <p class="copyright">© 2025 NetEthik. Tous droits réservés.</p>
+    </footer>
+</body>

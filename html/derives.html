@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darknet Éthique</title>
     <link rel="stylesheet" href="../css/style.css"> 
-    <script src="../java/script.js"></script>
+    <script src="../js/script2.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -13,7 +13,7 @@
         <a href="#" class="logo">NetEthik</a>
         <div class="nav-links">
             <ul>
-                <li><a href="../html/explorer.html">Explorer le Dark Web Simulé</a></li>
+                <li><a href="../html/accueil.html">Accueil</a></li>
                 <li><a href="../html/apropos.html">À propos</a></li>
             </ul>
         </div>
@@ -29,19 +29,126 @@
         </section>
         <div class="menu-interactif">
         <ol>
-            <li class = "postit-item"id="postit-item1"><a href="explorer.html">Explorer le Dark Web</a></li>          
-            <li class = "postit-item" id="postit-item3"><a href="#">Impact sur la justice et la gouvernance</a></li>
-            <li class = "postit-item" id="postit-item4"><a href="#">Pratiques sécuritaires pour naviguer en toute sécurité</a></li>
+            <li class = "postit-item" id="postit-item1"><a href="explorer.html">Explorer le Dark Web</a></li>          
+            <li class = "postit-item" id="postit-item3"><a href="impact.html">Impact sur la justice et la gouvernance</a></li>
+            <li class = "postit-item" id="postit-item4"><a href="pratiques.html">Pratiques sécuritaires pour naviguer en toute sécurité</a></li>
         </ol>
     </div>
     </header>
+    
+        <section class="login-section" id="Informations">
+            <div class="login-card">
+                <h2>🔐 Connexion sécurisée</h2>
+                <form action="#" method="post" class="login-form" onsubmit="return false">
+                <div class="input-box">
+                    <input type="text" id="username" name="username" required>
+                    <label for="username">Nom d'utilisateur</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" id="password" name="password" required>
+                    <label for="password">Mot de passe</label>
+                </div>
+
+                <button type="submit" value="Commencer le quiz" onclick="quizAlert()" id="startButton">Commencer le quiz</button>
+
+                <p class="login-help">🚀 Première visite ? <a href="#">Contactez l’équipe</a></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="formulaire-section">
+            <h2>Testez vos connaissances sur le Darknet</h2>
+
+            <div class="form-derives">
+            <h3>🧠 Partie 1 : QCM</h3>
+
+            <fieldset>
+                <legend>1. Quels éléments peuvent être vendus sur les marchés noirs du darknet ?</legend>
+                <label><input type="checkbox" name="q1" value="A"> A. Données personnelles</label>
+                <label><input type="checkbox" name="q1" value="B"> B. Billets de banque authentiques</label>
+                <label><input type="checkbox" name="q1" value="C"> C. Faux papiers d'identité</label>
+                <label><input type="checkbox" name="q1" value="D"> D. Médicaments sur ordonnance</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Quelles sont des cryptomonnaies fréquemment utilisées sur le darknet ?</legend>
+                <label><input type="checkbox" name="q2" value="A"> A. Monero</label>
+                <label><input type="checkbox" name="q2" value="B"> B. Bitcoin</label>
+                <label><input type="checkbox" name="q2" value="C"> C. Tether</label>
+                <label><input type="checkbox" name="q2" value="D"> D. Litecoin</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. Les raisons pour lesquelles certains militants utilisent le darknet sont :</legend>
+                <label><input type="checkbox" name="q3" value="A"> A. Contourner la censure</label>
+                <label><input type="checkbox" name="q3" value="B"> B. Organiser des opérations militaires</label>
+                <label><input type="checkbox" name="q3" value="C"> C. Garantir leur anonymat</label>
+                <label><input type="checkbox" name="q3" value="D"> D. Diffuser des fake news</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. Quelles activités relèvent de la cybercriminalité sur le darknet ?</legend>
+                <label><input type="checkbox" name="q4" value="A"> A. Piratage de données</label>
+                <label><input type="checkbox" name="q4" value="B"> B. Vente de films en ligne légaux</label>
+                <label><input type="checkbox" name="q4" value="C"> C. DDoS sur commande</label>
+                <label><input type="checkbox" name="q4" value="D"> D. Création de ransomwares</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>5. Quelles organisations sont connues pour lutter activement contre les dérives du darknet ?</legend>
+                <label><input type="checkbox" name="q5" value="A"> A. Interpol</label>
+                <label><input type="checkbox" name="q5" value="B"> B. Europol</label>
+                <label><input type="checkbox" name="q5" value="C"> C. WikiLeaks</label>
+                <label><input type="checkbox" name="q5" value="D"> D. FBI</label>
+            </fieldset>
+
+            <h3>🧩 Partie 2 : Questions à trou</h3>
+
+            <label>6. Le réseau permettant d'accéder au darknet via un système d’anonymisation en couches est appelé le réseau __________.
+                <input type="text" name="q6">
+            </label>
+
+            <label>7. Le marché noir __________ a été l’un des plus célèbres avant sa fermeture par le FBI en 2013.
+                <input type="text" name="q7">
+            </label>
+
+            <label>8. Les “Red Rooms” font référence à des contenus supposés où l’on verrait des actes de __________ diffusés en direct contre paiement.
+                <input type="text" name="q8">
+            </label>
+
+            <label>9. Une cryptomonnaie comme __________ est privilégiée pour son anonymat supérieur au Bitcoin.
+                <input type="text" name="q9">
+            </label>
+
+            <label>10. Lors de transactions illégales sur le darknet, le système d’__________ (ou “escrow”) est utilisé pour sécuriser les paiements entre vendeurs et acheteurs.
+                <input type="text" name="q10">
+            </label>
+
+            <button type="button" onclick="submitQuiz()">Soumettre</button>
+            </div>
+        </section>
+        <main>
+            <table id="result">
+                <caption>Tableau des résultats du quiz</caption>
+                    <thead>
+                        <tr>
+                        <th>Essai</th>
+                        <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+            </table>
+        </main>
+    
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-col">
                 <ul>
                     <li><a href="../html/explorer.html">Simulation</a></li>
                     <li><a href="../html/apropos.html">À propos</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="apropos.html">Contact</a></li>
                 </ul>
         </div>
 

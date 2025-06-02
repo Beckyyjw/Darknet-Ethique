@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darknet Éthique</title>
     <link rel="stylesheet" href="../css/style.css"> 
-    <script src="../java/script.js"></script>
+    <script src="../js/script.js"></script>
 </head>
 
 <body>
@@ -30,10 +30,10 @@
         </section>
         <div class="menu-interactif">
         <ol>
-            <li class = "postit-item"id="postit-item1"><a href="explorer.html">Explorer le Dark Web</a></li>
-            <li class = "postit-item" id="postit-item2"><a href="#">Les dérives du Dark Web</a></li>
-            <li class = "postit-item" id="postit-item3"><a href="#">Impact sur la justice et la gouvernance</a></li>
-            <li class = "postit-item" id="postit-item4"><a href="#">Pratiques sécuritaires pour naviguer en toute sécurité</a></li>
+            <li class = "postit-item" id="postit-item1"><a href="explorer.html">Explorer le Dark Web</a></li>
+            <li class = "postit-item" id="postit-item2"><a href="derives.html">Les dérives du Dark Web</a></li>
+            <li class = "postit-item" id="postit-item3"><a href="impact.html">Impact sur la justice et la gouvernance</a></li>
+            <li class = "postit-item" id="postit-item4"><a href="pratiques.html">Pratiques sécuritaires pour naviguer en toute sécurité</a></li>
         </ol>
     </div>
     </header>
@@ -68,16 +68,16 @@
         <h3>Les dérives du Dark Web</h3>
         <p>Identifiez les dérèglements liés à l’usage illicite du Dark Web.</p>
     </div></a>
-    <div class="sub_redirections">
+    <a href="impact.html"><div class="sub_redirections">
         <img src="../assets/person.png" alt="person">
         <h3>Justice et gouvernance</h3>
         <p>Analysez les répercussions du Dark Web sur les institutions.</p>
-    </div>
-    <div class="sub_redirections">
+    </div></a>
+    <a href="pratiques.html"><div class="sub_redirections">
         <img src="../assets/security.png" alt="sécurité">
         <h3>Pratiques sécuritaires</h3>
         <p>Apprenez les meilleures pratiques pour une navigation sécurisée.</p>
-    </div>
+    </div></a>
     </section>
 
 
@@ -87,7 +87,7 @@
                 <ul>
                     <li><a href="../html/explorer.html">Simulation</a></li>
                     <li><a href="../html/apropos.html">À propos</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="apropos.html">Contact</a></li>
                 </ul>
         </div>
 
@@ -101,6 +101,11 @@
         </div>
         <p class="copyright">© 2025 NetEthik. Tous droits réservés.</p>
     </footer>
-
+    <script>
+    window.onload = function(){
+        alert("Bienvenue, vous êtes sur le point de découvrir le Darknet.")
+    }
+    </script>
 </body>
 </html>
+

@@ -1,0 +1,64 @@
+{
+  "intents": [
+    {
+      "tag": "greet",
+      "patterns": ["Bonjour", "Salut", "Coucou"],
+      "responses": ["Bonjour ! Que voulez-vous savoir sur le darknet ?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Au revoir", "À bientôt", "À la prochaine"],
+      "responses": ["À bientôt ! Naviguez prudemment sur le web."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Merci", "Merci beaucoup", "Merci pour votre aide"],
+      "responses": ["Avec plaisir !"]
+    },
+    {
+      "tag": "darknet_definition",
+      "patterns": ["Qu'est-ce que le darknet ?", "Définition du darknet", "C'est quoi le darknet ?"],
+      "responses": ["Le darknet désigne une partie d'Internet non indexée par les moteurs de recherche classiques, souvent accessible via des réseaux comme Tor, et utilisée à la fois à des fins légitimes et illégales."]
+    },
+    {
+      "tag": "tor_usage",
+      "patterns": ["C'est quoi Tor ?", "Comment fonctionne Tor ?", "Pourquoi utiliser Tor ?"],
+      "responses": ["Tor est un réseau de navigation anonyme qui permet d'accéder au darknet. Il fonctionne par couches de chiffrement pour protéger l'identité et la localisation des utilisateurs."]
+    },
+    {
+      "tag": "illegal_activities",
+      "patterns": ["Quelles sont les activités illégales sur le darknet ?", "Que peut-on acheter sur le darknet ?"],
+      "responses": ["Le darknet est parfois utilisé pour la vente illégale de drogues, d'armes, de faux papiers, ou encore de données volées. Ces activités sont évidemment illégales et dangereuses."]
+    },
+    {
+      "tag": "uses_legit",
+      "patterns": ["Y a-t-il des usages légitimes du darknet ?", "Le darknet est-il toujours illégal ?"],
+      "responses": ["Non, il existe des usages légitimes du darknet comme la protection de la vie privée, la liberté d’expression dans des régimes autoritaires, ou encore des recherches journalistiques."]
+    },
+    {
+      "tag": "cryptomonnaies",
+      "patterns": ["Quelles cryptomonnaies sont utilisées sur le darknet ?", "Le bitcoin est-il utilisé sur le darknet ?"],
+      "responses": ["Les cryptomonnaies comme le Bitcoin ou le Monero sont fréquemment utilisées sur le darknet pour assurer l'anonymat des transactions."]
+    },
+    {
+      "tag": "red_rooms",
+      "patterns": ["Qu'est-ce qu'une red room ?", "Les red rooms existent-elles ?"],
+      "responses": ["Les 'red rooms' sont des légendes urbaines qui décrivent des vidéos en direct de tortures contre paiement. Aucune preuve crédible de leur existence réelle n’a été apportée."]
+    },
+    {
+      "tag": "cybersecurity",
+      "patterns": ["Comment se protéger sur le darknet ?", "Quels sont les risques à visiter le darknet ?"],
+      "responses": ["Il est essentiel d’utiliser un VPN, de ne pas divulguer d’informations personnelles et de se méfier des arnaques. Le darknet peut comporter de nombreux risques pour la cybersécurité."]
+    },
+    {
+      "tag": "authorities",
+      "patterns": ["Qui lutte contre le darknet ?", "Comment les autorités surveillent-elles le darknet ?"],
+      "responses": ["Des organisations comme le FBI, Europol ou Interpol surveillent activement les activités illégales sur le darknet, en infiltrant les réseaux et en traquant les cybercriminels."]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": ["Je ne suis pas sûr de comprendre. Pouvez-vous reformuler votre question sur le darknet ?"]
+    }
+  ]
+}

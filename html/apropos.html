@@ -1,67 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À propos - NetEthik</title>
-    <link rel="stylesheet" href="../css/style.css"> <!-- Ton fichier CSS ici -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos – NetEthik</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../java/script.js" defer></script>
 </head>
-<script src="../java/script.js"></script>
+
 <body>
-    <!-- En-tête -->
-    <nav class="navbar">
-        <img src="../assets/Site_logo.png" alt="logo" class="logo-img"> <!--="50" width="50"-->
-        <a href="#" class="logo">NetEthik</a>
-        <div class="nav-links">
-            <ul>
-                <li><a href="../html/explorer.html">Explorer le Dark Web Simulé</a></li>
-                <li><a href="../html/accueil.html">Accueil</a></li>
-            </ul>
-        </div>
-        <img src="../assets/menu_hamburger.png" alt="menu hamburger" class="menu-hamburger">
-    </nav>
-    <header></header>
-    
+  <!-- Barre de navigation -->
+  <nav class="navbar">
+    <img src="../assets/Site_logo.png" alt="logo" class="logo-img">
+    <a href="#" class="logo">NetEthik</a>
+    <div class="nav-links">
+      <ul>
+        <li><a href="../html/explorer.html">Simulation</a></li>
+        <li><a href="../html/accueil.html">Accueil</a></li>
+      </ul>
+    </div>
+    <img src="../assets/menu_hamburger.png" alt="menu hamburger" class="menu-hamburger">
+  </nav>
 
-    <!-- Contenu principal -->
-    <main>
-        <div>
-            <legend>Présentation du projet</legend>
+  <!-- Bannière -->
+  <header class="page-banner">
+    <h1>À propos du projet</h1>
+    <p>Découvrez qui nous sommes et pourquoi ce projet est important</p>
+  </header>
+
+  <!-- Contenu principal -->
+  <main class="apropos-content">
+    <section class="apropos-section">
+        <h2>Présentation du projet</h2>
             <p>
-                Ce site a été créé pour simuler de manière éducative l'environnement du Dark Web, tout en explorant les implications du Dark Web sur la justice numérique et les institutions efficaces. 
-                Nous voulons sensibiliser le public sur les dangers de ce réseau anonyme tout en promouvant des solutions pour une cybersécurité renforcée.
+                <strong>Darknet Éthique</strong> est une plateforme pédagogique conçue pour simuler de manière immersive l’environnement du Dark Web. Son objectif est d’explorer les usages déviants de cet espace numérique, tout en mettant en lumière ses conséquences sur la justice numérique, la gouvernance, et la sécurité des données.
             </p>
-        </div>
+            <br>
+            <p>
+                En exposant les risques associés à l’anonymat en ligne — tels que la cybercriminalité, le trafic d’identités, les contenus illicites ou les atteintes aux droits fondamentaux — le projet vise à développer l’esprit critique et la vigilance numérique des utilisateurs.
+            </p>
+            <br>
+            <p>
+                Ce travail s’inscrit directement dans le cadre de l’<strong>Objectif de Développement Durable (ODD) n°16</strong> de l’Organisation des Nations Unies, qui promeut la <em>paix, la justice et des institutions efficaces</em>. Il met l’accent sur l’importance de bâtir un écosystème numérique plus éthique, plus transparent, et plus sécurisé pour tous.
+            </p>
+            <br>
+            <p>
+                À travers cette initiative, nous encourageons une culture de la cybersécurité responsable, fondée sur la prévention, l’éducation, et le renforcement des capacités institutionnelles face aux menaces numériques émergentes.
+            </p>
+    </section>
 
-        <div>
-            <legend>Membres du projet</legend>
-            <p><strong>Étudiante 1 :</strong> ELIBE Becky Joyce</p>
-            <p><strong>Étudiant 2 :</strong> Antoine EMAD ASHAM</p>
-        </div>
-    </main>
 
-    <!-- Pied de page -->
-    <footer class="site-footer">
-        <div class="footer-container">
-        <div class="footer-col">
-        
+    <section class="apropos-section">
+      <h2>Membres du projet</h2>
+      <ul class="membres">
+        <li><strong>Étudiante 1 :</strong> ELIBE Becky Joyce – Dévéloppeur 1</li>
+        <li><strong>Étudiant 2 :</strong> Antoine EMAD ASHAM – Dévéloppeur 2</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
         <ul>
-            <li><a href="../html/explorer.html">Simulation</a></li>
-            <li><a href="../html/apropos.html">À propos</a></li>
-            <li><a href="#">Contact</a></li>
+          <li><a href="../html/explorer.html">Simulation</a></li>
+          <li><a href="../html/apropos.html">À propos</a></li>
+          <li><a href="apropos.html">Contact</a></li>
         </ul>
-        </div>
-
-        <div class="footer-col">
-       
+      </div>
+      <div class="footer-col">
         <ul>
-            <li><a href="https://darknet-tor.com/">En savoir plus</a></li>
-            <li><a href="#">Mentions légales</a></li>
+          <li><a href="https://darknet-tor.com/">En savoir plus</a></li>
+          <li><a href="#">Mentions légales</a></li>
         </ul>
-        </div>
-        </div>
-        <p class="copyright">© 2025 NetEthik. Tous droits réservés.</p>
-    </footer>
-
+      </div>
+    </div>
+    <p class="copyright">© 2025 NetEthik. Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
